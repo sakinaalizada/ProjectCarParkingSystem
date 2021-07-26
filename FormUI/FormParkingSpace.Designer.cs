@@ -267,6 +267,7 @@ namespace FormUI
             // 
             // dgwParkingSpace
             // 
+            this.dgwParkingSpace.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgwParkingSpace.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dgwParkingSpace.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgwParkingSpace.Location = new System.Drawing.Point(12, 69);

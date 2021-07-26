@@ -244,6 +244,7 @@ namespace FormUI
             // 
             // dgwCarAdd
             // 
+            this.dgwCarAdd.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgwCarAdd.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dgwCarAdd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgwCarAdd.Location = new System.Drawing.Point(27, 72);

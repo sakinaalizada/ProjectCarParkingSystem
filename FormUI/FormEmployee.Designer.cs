@@ -307,6 +307,7 @@ namespace FormUI
             // 
             // dgwEmployee
             // 
+            this.dgwEmployee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgwEmployee.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dgwEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgwEmployee.GridColor = System.Drawing.SystemColors.AppWorkspace;
