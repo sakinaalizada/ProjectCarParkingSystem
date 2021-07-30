@@ -79,6 +79,9 @@
     <Compile Include="Concrete\EntityFrameWork\EFEmployeeDal.cs" />
     <Compile Include="Concrete\EntityFrameWork\EFEntityRepositoryBase.cs" />
     <Compile Include="Concrete\EntityFrameWork\EFParkingSpaceDal.cs" />
+    <Compile Include="Concrete\EntityFrameWork\Mappers\CarMapper.cs" />
+    <Compile Include="Concrete\EntityFrameWork\Mappers\EmployeeMapper.cs" />
+    <Compile Include="Concrete\EntityFrameWork\Mappers\ParkingSpaceMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
