@@ -2,18 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using Business.Abstract;
-using Business.Concrete;
-using DataAccess.EntityFrameWork.Concrete;
 using Entities.Concrete;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Business.IoC.NInjection;
 
 namespace FormUI
 {
@@ -23,7 +14,7 @@ namespace FormUI
         public FormEmployee()
         {
             InitializeComponent();
-            _employeeService = new EmployeeManager(new EFEmployeeDal());
+            _employeeService = InstanceFactory.GetInstance<IEmployeeService>();
         }
         private void LoadData()
         {

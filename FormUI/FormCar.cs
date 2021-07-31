@@ -1,16 +1,7 @@
 ﻿using Business.Abstract;
-using Business.Concrete;
-using DataAccess.Abstract;
-using DataAccess.EntityFrameWork.Concrete;
+using Business.IoC.NInjection;
 using Entities.Concrete;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FormUI
@@ -22,8 +13,8 @@ namespace FormUI
         public FormCar()
         {
             InitializeComponent();
-            _carService = new CarManager(new EFCarDal());
-            _parkingSpaceService = new ParkingSpaceManager(new EFParkingSpaceDal());
+            _carService = InstanceFactory.GetInstance<ICarService>();
+            _parkingSpaceService = InstanceFactory.GetInstance<IParkingSpaceService>();
         }
 
         private void btnCarAdd_Click(object sender, EventArgs e)
@@ -106,5 +97,6 @@ namespace FormUI
         {
             LoadData();
         }
+
     }
 }

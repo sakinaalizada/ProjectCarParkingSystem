@@ -1,15 +1,9 @@
 ﻿using Business.Abstract;
 using Business.Concrete;
+using Business.IoC.NInjection;
 using DataAccess.EntityFrameWork.Concrete;
 using Entities.Concrete;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FormUI
@@ -20,7 +14,7 @@ namespace FormUI
         public FormParkingSpace()
         {
             InitializeComponent();
-            _parkingSpaceService = new ParkingSpaceManager(new EFParkingSpaceDal());
+            _parkingSpaceService = InstanceFactory.GetInstance<IParkingSpaceService>();
 
         }
         private void LoadData()

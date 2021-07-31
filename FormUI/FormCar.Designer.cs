@@ -254,6 +254,7 @@ namespace FormUI
             this.dgwCarAdd.Size = new System.Drawing.Size(1101, 223);
             this.dgwCarAdd.TabIndex = 12;
             this.dgwCarAdd.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwCarAdd_CellClick);
+           
             // 
             // FormCar
             // 
